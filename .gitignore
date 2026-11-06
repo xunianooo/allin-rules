@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+private*
+*private*.pem
+*.key
+*.p12
+*.pfx
+*.p8
+*.p7b
+out/
+output/
+signing-output/
