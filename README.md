@@ -6,8 +6,8 @@
 
 - GitHub Pages 已启用，发布 `main` 分支的 `docs` 目录。
 - 匿名下载探针 `https://xunianooo.github.io/allin-rules/endpoint-probe.bin` 已实测直接200、Content-Type application/octet-stream、无重定向、正文匹配。它不是规则签名包，应用会拒绝它。
-- 约定生产地址 `https://xunianooo.github.io/allin-rules/current.bin`；当前该文件不存在，等待维护者在电脑完成首签。
-- 生产公钥尚未确定，应用更新源保持 disabled，不打包测试密钥。
+- 约定生产地址 `https://xunianooo.github.io/allin-rules/current.bin`；首版1.0.1已由维护者电脑离线签名并发布，签名信封2000字节，SHA256为309ade3b6823ad4265bef650715b29ca784f1ba98bde70ddcc15bf9f8ea001b4。
+- 生产公钥SPKI SHA256为013b93d6d492bb32460714197fd8732ccb89aca5c1710d4c95dbc6da9af311f3，已通过维护者独立提供的指纹核对。公钥在docs/public.pem，描述符在docs/trust.json；已内嵌此信任的新APK可主动更新，旧未激活APK需先安装接入版。私钥始终留在维护者电脑。
 - `rules/source.json` 的1.0.1仅把既有内置1.0.0规则复制为分发引导版，三条规则内容相同，不声称新增厂商兼容。
 
 ## 首次接入
